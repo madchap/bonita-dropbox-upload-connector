@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>DropboxUploadMultiple</id>
+  <version>1.0.0</version>
+  <icon>aps_dropbox-icon.png</icon>
+  <category id="Dropbox"/>
+  <input mandatory="true" name="dropboxOauthFile" type="java.lang.String"/>
+  <input name="docsToProcess" type="java.util.Map"/>
+  <page id="DropboxUploadMultipleConfigPage">
+    <widget xsi:type="definition:Text" id="oauthFileWidget" inputName="dropboxOauthFile"/>
+    <widget xsi:type="definition:Text" id="docsListWidget" inputName="docsToProcess"/>
+  </page>
+  <jarDependency>dropbox-core-sdk-1.7.6.jar</jarDependency>
+  <jarDependency>jackson-core-2.2.3.jar</jarDependency>
+</definition:ConnectorDefinition>

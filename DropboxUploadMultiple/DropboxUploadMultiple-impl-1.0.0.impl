@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<implementation:connectorImplementation xmlns:implementation="http://www.bonitasoft.org/ns/connector/implementation/6.0">
+  <implementationId>DropboxUploadMultiple-Quarterback-TDC-impl</implementationId>
+  <implementationVersion>1.0.0</implementationVersion>
+  <definitionId>DropboxUploadMultiple</definitionId>
+  <definitionVersion>1.0.0</definitionVersion>
+  <implementationClassname>org.mycompany.DropboxUploadMultipleImpl</implementationClassname>
+  <hasSources>true</hasSources>
+  <description>Upload multiple documents contained in a HashMap, representing the local files and their destination</description>
+  <jarDependencies>
+    <jarDependency>dropbox-core-sdk-1.7.6.jar</jarDependency>
+    <jarDependency>jackson-core-2.2.3.jar</jarDependency>
+    <jarDependency>DropboxUploadMultiple-impl-1.0.0.jar</jarDependency>
+  </jarDependencies>
+</implementation:connectorImplementation>
