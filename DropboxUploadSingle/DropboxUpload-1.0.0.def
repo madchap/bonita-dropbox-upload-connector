@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>DropboxUpload</id>
+  <version>1.0.0</version>
+  <icon>aps_dropbox-icon.png</icon>
+  <category id="Dropbox"/>
+  <input mandatory="true" name="oauth2_json_file" type="java.lang.String"/>
+  <input mandatory="false" name="local_file_path" type="java.lang.String"/>
+  <input mandatory="false" name="dropbox_file_path" type="java.lang.String"/>
+  <output name="json_return_output" type="java.lang.String"/>
+  <page id="oauth_configuration">
+    <widget xsi:type="definition:Text" id="oauth_token" inputName="oauth2_json_file"/>
+    <widget xsi:type="definition:Text" id="local_file" inputName="local_file_path"/>
+    <widget xsi:type="definition:Text" id="dropbox_file" inputName="dropbox_file_path"/>
+  </page>
+  <jarDependency>dropbox-core-sdk-1.7.6.jar</jarDependency>
+  <jarDependency>jackson-core-2.2.3.jar</jarDependency>
+</definition:ConnectorDefinition>
